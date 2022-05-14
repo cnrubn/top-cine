@@ -181,4 +181,28 @@ footer .flex-footer .redes ul li a {
 footer .flex-footer .redes ul li a:hover {
   color: #eee;
 }
+
+@media screen and (max-width: 609px) {
+  .tarjetas .tarjeta {
+    margin: 30px;
+    padding: 15px;
+  }
+  .tarjetas .tarjeta .contenedor-img img {
+    border-radius: 15px;
+  }
+  .tarjetas .tarjeta .info {
+    max-width: 400px;
+    padding: 0 5px 0 25px;
+    position: relative;
+  }
+  .tarjetas .tarjeta .info .puntuacion {
+    top: -26px;
+    left: 184.5px;
+  }
+  .tarjetas .tarjeta .info .descripcion {
+    overflow-y: none;
+    scrollbar-width: none;
+    max-height: 100%;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */

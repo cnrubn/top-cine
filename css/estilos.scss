@@ -212,3 +212,45 @@ footer {
 
 
 }
+
+
+// QUERYS
+@media screen and (max-width: 609px) {
+
+
+    .tarjetas {
+
+        .tarjeta {
+            margin: 30px;
+            padding: 15px;
+
+    
+            .contenedor-img {
+
+                img {
+                    border-radius: 15px;
+                }
+            }
+    
+            .info {
+                max-width: 400px;
+                padding: 0 5px 0 25px;
+                position: relative;
+
+                .puntuacion {         
+                    top: -26px;
+                    left: 184.5px;  
+                }
+    
+                .descripcion {
+                    overflow-y: none;
+                    scrollbar-width: none;
+                    max-height: 100%;
+                }
+    
+            }
+
+        }
+    }
+
+}
