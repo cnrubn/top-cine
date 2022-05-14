@@ -18,8 +18,7 @@ body {
 header {
     background-color: rgb(228, 237, 158);
     box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
-
-    
+  
     .cabecera {
         display: flex;
         flex-wrap: wrap;
@@ -39,18 +38,13 @@ header {
     .eslogan {
         text-align: center;
         font-size: 1.4em;
-        // font-weight: 400;
         padding-bottom: 20px;
     }
 }
 
 // TARJETAS
 .tarjetas {
-    // background-color: #aaa;
-    // max-width: 1700px;
-    margin: 20px auto;
-    // padding: 20px;
-    
+    margin: 20px auto;  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -63,27 +57,15 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // border-radius: 5px;
         background-color: $fondo-tarjeta;
         border-radius: 15px;
-
         overflow: hidden;
-        
-        // padding: 1px;
-        // border: none;
         text-decoration: none;
-        color: $texto-descripcion;
-        
+        color: $texto-descripcion;       
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 
         .contenedor-img {
-            // background-color: red;
-            // max-height: 99%;
-            // border: none;
             height: 375px;
-
-            // min-height: 375px;
-            // max-height: 375px;
             max-width: 250px;
             
             img {
@@ -94,38 +76,34 @@ header {
         }
 
         .info {
-            // background-color: rgb(231, 235, 195);
             max-width: 300px;
             padding: 0 5px 0 25px;
             position: relative;
 
-
-
             .puntuacion {         
-                background-color: rgb(255, 255, 255);
+                background-color: #fff;
                 position: absolute;
-                top: 115px;
+                top: 125px;
                 left: -35px;
-                // z-index: 1;
-
-                padding: 4px;
-                // margin: 2px;
-                border-radius: 100px;
-                // font-size: 1.1em;
                 font-weight: bold;
+                border-radius: 100px;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
 
                 .nota {
                     background-color: rgb(79, 181, 32);
-                    border-radius: 100px;
-                    padding: 10px;
-                    // border: 3px solid rgb(13, 156, 44);
                     color: #fff;
-
-
-                }
-
-                
-                
+                    border-radius: 100px;
+                    width: 52px;
+                    height: 52px;
+                    text-align: center;
+                    line-height: 52px;
+                    font-size: 1.3em;
+                }                
             }
 
             .titulo {
@@ -138,17 +116,13 @@ header {
             }
 
             .descripcion {
-                // background-color: brown;
                 overflow-y: auto;
                 max-height: 215px;
-                // border-radius: 15px;
-                // border-bottom: 1px solid #000;
                 scrollbar-width: none;
                 text-align: justify; 
                 padding-right: 20px;
                 line-height: 1.3em;
             }
-
         }
 
         &:hover {
@@ -203,20 +177,16 @@ footer {
                         &:hover {
                             color: #eee;                        
                         }
-                    }
-       
+                    }      
                 }
             }
         }
     }
-
-
 }
 
 
 // QUERYS
 @media screen and (max-width: 609px) {
-
 
     .tarjetas {
 
@@ -224,9 +194,7 @@ footer {
             margin: 30px;
             padding: 15px;
 
-    
             .contenedor-img {
-
                 img {
                     border-radius: 15px;
                 }
@@ -238,7 +206,7 @@ footer {
                 position: relative;
 
                 .puntuacion {         
-                    top: -26px;
+                    top: -30px;
                     left: 184.5px;  
                 }
     
@@ -249,8 +217,6 @@ footer {
                 }
     
             }
-
         }
     }
-
 }
