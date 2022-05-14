@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+header {
+  background-color: #e4ed9e;
+  -webkit-box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
+          box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
+}
+
+header .cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .cabecera .logo {
+  margin: 15px;
+  font-size: 3em;
+}
+
+header .cabecera h1 {
+  font-size: 3em;
+}
+
+header .eslogan {
+  text-align: center;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+
+.tarjetas {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tarjetas .tarjeta {
+  margin: 15px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas .tarjeta .contenedor-img {
+  height: 375px;
+  max-width: 250px;
+}
+
+.tarjetas .tarjeta .contenedor-img img {
+  border-radius: 15px 0 0 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.tarjetas .tarjeta .info {
+  max-width: 300px;
+  padding: 0 5px 0 25px;
+  position: relative;
+}
+
+.tarjetas .tarjeta .info .puntuacion {
+  background-color: white;
+  position: absolute;
+  top: 115px;
+  left: -35px;
+  padding: 4px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.tarjetas .tarjeta .info .puntuacion .nota {
+  background-color: #4fb520;
+  border-radius: 100px;
+  padding: 10px;
+  color: #fff;
+}
+
+.tarjetas .tarjeta .info .titulo {
+  font-weight: 700;
+  font-size: 1.3em;
+  padding-bottom: 13px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.tarjetas .tarjeta .info .descripcion {
+  overflow-y: auto;
+  max-height: 215px;
+  scrollbar-width: none;
+  text-align: justify;
+  padding-right: 20px;
+  line-height: 1.3em;
+}
+
+.tarjetas .tarjeta:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+footer .flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 60px;
+}
+
+footer .flex-footer .nombre h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+footer .flex-footer .redes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .flex-footer .redes ul li {
+  float: left;
+}
+
+footer .flex-footer .redes ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+footer .flex-footer .redes ul li a:hover {
+  color: #eee;
+}
+/*# sourceMappingURL=estilos.css.map */

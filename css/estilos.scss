@@ -1,0 +1,214 @@
+$fondo: #eee;
+$fondo-tarjeta: #fff;
+$texto-descripcion: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+// CABECERA
+header {
+    background-color: rgb(228, 237, 158);
+    box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
+
+    
+    .cabecera {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            margin: 15px;
+            font-size: 3em;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    .eslogan {
+        text-align: center;
+        font-size: 1.4em;
+        // font-weight: 400;
+        padding-bottom: 20px;
+    }
+}
+
+// TARJETAS
+.tarjetas {
+    // background-color: #aaa;
+    // max-width: 1700px;
+    margin: 20px auto;
+    // padding: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    
+    .tarjeta {
+        margin: 15px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // border-radius: 5px;
+        background-color: $fondo-tarjeta;
+        border-radius: 15px;
+
+        overflow: hidden;
+        
+        // padding: 1px;
+        // border: none;
+        text-decoration: none;
+        color: $texto-descripcion;
+        
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+        .contenedor-img {
+            // background-color: red;
+            // max-height: 99%;
+            // border: none;
+            height: 375px;
+
+            // min-height: 375px;
+            // max-height: 375px;
+            max-width: 250px;
+            
+            img {
+                border-radius: 15px 0 0 15px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .info {
+            // background-color: rgb(231, 235, 195);
+            max-width: 300px;
+            padding: 0 5px 0 25px;
+            position: relative;
+
+
+
+            .puntuacion {         
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                top: 115px;
+                left: -35px;
+                // z-index: 1;
+
+                padding: 4px;
+                // margin: 2px;
+                border-radius: 100px;
+                // font-size: 1.1em;
+                font-weight: bold;
+
+                .nota {
+                    background-color: rgb(79, 181, 32);
+                    border-radius: 100px;
+                    padding: 10px;
+                    // border: 3px solid rgb(13, 156, 44);
+                    color: #fff;
+
+
+                }
+
+                
+                
+            }
+
+            .titulo {
+                font-weight: 700;
+                font-size: 1.3em;
+                padding-bottom: 13px;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #000;
+            }
+
+            .descripcion {
+                // background-color: brown;
+                overflow-y: auto;
+                max-height: 215px;
+                // border-radius: 15px;
+                // border-bottom: 1px solid #000;
+                scrollbar-width: none;
+                text-align: justify; 
+                padding-right: 20px;
+                line-height: 1.3em;
+            }
+
+        }
+
+        &:hover {
+            box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+
+// FOOTER
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    .flex-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 60px;
+
+        .nombre {
+
+            h3 {
+                font-size: 16px;
+                margin: 0;
+                padding: 0 20px;
+                line-height: 40px;                
+            }
+        }
+
+        .redes {
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+    
+                li {
+                    float: left;
+    
+                    a {
+                        list-style: none;
+                        text-decoration: none;
+                        color: #ccc;
+                        display: block;
+                        padding: 0 20px;
+                        line-height: 40px;
+    
+                        &:hover {
+                            color: #eee;                        
+                        }
+                    }
+       
+                }
+            }
+        }
+    }
+
+
+}
