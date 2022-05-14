@@ -1,6 +1,9 @@
-$fondo: #eee;
+$fondo: #f7fff7;
 $fondo-tarjeta: #fff;
 $texto-descripcion: #000;
+$cabecera-fondo: #1a535c;
+$cabecera-texto: #fff;
+$burbuja-nota: #4ecdc4;
 
 * {
     margin: 0;
@@ -8,7 +11,7 @@ $texto-descripcion: #000;
 }
 
 body {
-    background-color: #eee;
+    background-color: $fondo;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
@@ -16,8 +19,9 @@ body {
 
 // CABECERA
 header {
-    background-color: rgb(228, 237, 158);
-    box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
+    background-color: $cabecera-fondo;
+    box-shadow: 0 1px 4px rgba(17, 152, 255, 0.6);
+    color: $cabecera-texto;
   
     .cabecera {
         display: flex;
@@ -39,6 +43,7 @@ header {
         text-align: center;
         font-size: 1.4em;
         padding-bottom: 20px;
+        color: rgba($cabecera-texto, 0.4);
     }
 }
 
@@ -95,7 +100,7 @@ header {
                 justify-content: center;
 
                 .nota {
-                    background-color: rgb(79, 181, 32);
+                    background-color: $burbuja-nota;
                     color: #fff;
                     border-radius: 100px;
                     width: 52px;
@@ -214,6 +219,26 @@ footer {
                     overflow-y: none;
                     scrollbar-width: none;
                     max-height: 100%;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .tarjetas {
+
+        .tarjeta {
+            margin: 30px 5px;
+            padding: 10px;
+    
+            .info {
+                padding: 0 5px;
+
+                .descripcion {
+                    padding-right: 0;
                 }
     
             }

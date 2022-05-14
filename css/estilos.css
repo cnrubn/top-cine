@@ -4,15 +4,16 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #f7fff7;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
 header {
-  background-color: #e4ed9e;
-  -webkit-box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
-          box-shadow: 0 1px 4px rgba(211, 35, 35, 0.2);
+  background-color: #1a535c;
+  -webkit-box-shadow: 0 1px 4px rgba(17, 152, 255, 0.6);
+          box-shadow: 0 1px 4px rgba(17, 152, 255, 0.6);
+  color: #fff;
 }
 
 header .cabecera {
@@ -42,6 +43,7 @@ header .eslogan {
   text-align: center;
   font-size: 1.4em;
   padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .tarjetas {
@@ -116,7 +118,7 @@ header .eslogan {
 }
 
 .tarjetas .tarjeta .info .puntuacion .nota {
-  background-color: #4fb520;
+  background-color: #4ecdc4;
   color: #fff;
   border-radius: 100px;
   width: 52px;
@@ -219,6 +221,19 @@ footer .flex-footer .redes ul li a:hover {
     overflow-y: none;
     scrollbar-width: none;
     max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .tarjetas .tarjeta {
+    margin: 30px 5px;
+    padding: 10px;
+  }
+  .tarjetas .tarjeta .info {
+    padding: 0 5px;
+  }
+  .tarjetas .tarjeta .info .descripcion {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
