@@ -154,6 +154,10 @@ header .eslogan {
   margin-bottom: 10px;
 }
 
+.tarjetas .tarjeta .info ::-webkit-scrollbar {
+  display: none;
+}
+
 .tarjetas .tarjeta:hover {
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);

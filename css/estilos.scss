@@ -125,13 +125,17 @@ header {
 
             .descripcion {
                 overflow-y: auto;
-                // max-height: 215px;
                 scrollbar-width: none;
                 text-align: justify; 
                 padding-right: 20px;
                 line-height: 1.3em;
                 margin-bottom: 10px;
             }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
         }
 
         &:hover {
