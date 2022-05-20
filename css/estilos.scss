@@ -72,6 +72,7 @@ header {
         .contenedor-img {
             height: 375px;
             max-width: 250px;
+            overflow: hidden;
             
             img {
                 border-radius: 15px 0 0 15px;
@@ -140,6 +141,15 @@ header {
 
         &:hover {
             box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+
+            .contenedor-img {
+                overflow: hidden;
+                
+                img {
+                    transition:all .5s ease;
+                    transform:scale(1.05);
+                }
+            }
         }
     }
 }
@@ -208,9 +218,8 @@ footer {
             padding: 15px;
 
             .contenedor-img {
-                img {
-                    border-radius: 15px;
-                }
+                overflow: hidden;
+                border-radius: 15px;
             }
     
             .info {

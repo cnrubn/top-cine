@@ -81,6 +81,7 @@ header .eslogan {
 .tarjetas .tarjeta .contenedor-img {
   height: 375px;
   max-width: 250px;
+  overflow: hidden;
 }
 
 .tarjetas .tarjeta .contenedor-img img {
@@ -163,6 +164,17 @@ header .eslogan {
           box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.tarjetas .tarjeta:hover .contenedor-img {
+  overflow: hidden;
+}
+
+.tarjetas .tarjeta:hover .contenedor-img img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -217,7 +229,8 @@ footer .flex-footer .redes ul li a:hover {
     margin: 30px;
     padding: 15px;
   }
-  .tarjetas .tarjeta .contenedor-img img {
+  .tarjetas .tarjeta .contenedor-img {
+    overflow: hidden;
     border-radius: 15px;
   }
   .tarjetas .tarjeta .info {
