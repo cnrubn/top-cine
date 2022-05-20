@@ -1,9 +1,9 @@
-$fondo: #f7fff7;
+$fondo: #eee;
 $fondo-tarjeta: #fff;
 $texto-descripcion: #000;
-$cabecera-fondo: #1a535c;
+$cabecera-fondo: #031927;
 $cabecera-texto: #fff;
-$burbuja-nota: #4ecdc4;
+$burbuja-nota: #43AA8B;
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@ body {
 // CABECERA
 header {
     background-color: $cabecera-fondo;
-    box-shadow: 0 1px 4px rgba(17, 152, 255, 0.6);
+    box-shadow: 0 2px 4px rgba(17, 152, 255, 0.4);
     color: $cabecera-texto;
   
     .cabecera {
@@ -43,7 +43,7 @@ header {
         text-align: center;
         font-size: 1.4em;
         padding-bottom: 20px;
-        color: rgba($cabecera-texto, 0.4);
+        color: rgba($cabecera-texto, 0.6);
     }
 }
 
@@ -84,6 +84,9 @@ header {
             max-width: 300px;
             padding: 0 5px 0 25px;
             position: relative;
+            display: flex;
+            max-height: 375px;
+            flex-direction: column;
 
             .puntuacion {         
                 background-color: #fff;
@@ -122,11 +125,12 @@ header {
 
             .descripcion {
                 overflow-y: auto;
-                max-height: 215px;
+                // max-height: 215px;
                 scrollbar-width: none;
                 text-align: justify; 
                 padding-right: 20px;
                 line-height: 1.3em;
+                margin-bottom: 10px;
             }
         }
 
@@ -209,6 +213,7 @@ footer {
                 max-width: 400px;
                 padding: 0 5px 0 25px;
                 position: relative;
+                max-height: none;
 
                 .puntuacion {         
                     top: -30px;
