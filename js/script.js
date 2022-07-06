@@ -24,6 +24,12 @@ const mostrarDatos = (data) => {
         // console.log(data["results"][i].vote_average);
         // console.log(urlPoster+data["results"][i].poster_path);
 
+
+        // Manipulación nota película, un solo decimal.
+        let dataNum = parseFloat(data["results"][i].vote_average);
+        dataNum = dataNum.toFixed(1);
+       
+
         imprimir += `<div >
                         <a target="_blank" class="tarjeta" href="${urlPeli}+${data["results"][i].id}">
                             <div class="contenedor-img">
@@ -31,7 +37,7 @@ const mostrarDatos = (data) => {
                             </div>
                             <div class="info">
                                 <div class="puntuacion">
-                                    <p class="nota">${data["results"][i].vote_average}</p>
+                                    <p class="nota">${ dataNum }</p>
                                 </div>
                                 <h3 class="titulo">${data["results"][i].title}</h3>
                                 <p class="descripcion">${data["results"][i].overview}</p>
